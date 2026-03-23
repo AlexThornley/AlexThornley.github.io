@@ -1,0 +1,137 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background: black;
+    padding: 15px 0;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* SECTIONS */
+section {
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* HOME */
+#home {
+    background: url("horak.png") no-repeat center center/cover;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 50px;
+}
+
+/* ABOUT */
+#about {
+    background: rgb(23, 23, 130);
+    color: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+}
+
+.about-container img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.about-text {
+    text-align: left;
+}
+
+/* SKILLS */
+#skills {
+    background: rgb(17, 92, 17);
+    color: white;
+    flex-direction: column;
+}
+
+.skills-list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.skills-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* CONTACT */
+#contact {
+    background: rgb(140, 19, 19);
+    color: white;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
